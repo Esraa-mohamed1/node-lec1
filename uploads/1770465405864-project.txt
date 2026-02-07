@@ -1,0 +1,75 @@
+Task: Online Cake Shop Website (HTML, CSS, JavaScript)
+ Objective
+
+Create a simple online cake shop website using HTML, CSS, and JavaScript.
+The website should allow users to view cakes, see details, and place an order using data fetched from a fake API.
+
+Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* Fake API 
+
+---
+
+
+### 1️⃣ Home / Cake Listing Page (`index.html`)
+
+* Shop title and short description
+* Fetch cakes from fake API using `XHR`
+* Display cakes in cards:
+  * Image
+  * Name
+  * Price
+  * “View Details” button
+
+
+
+### 2️⃣ Cake Details Page (`details.html`)
+
+* Get cake ID from URL query params
+* Show:
+
+  * Image
+  * Name
+  * Description
+  * Price
+  * Quantity selector
+  * “Add to Cart” button
+
+
+### 3️⃣ Cart & Checkout Page (`cart.html`)
+
+* Display selected cakes
+* Increase / decrease quantity
+* Remove items
+* Show total price
+* Simple checkout form:
+
+  * Name
+  * Phone
+  * Address
+* “Place Order” button → show success alert
+
+
+
+
+fake API here:
+👉 [https://dummyjson.com/products/1]
+
+
+Extra Bonuses
+* Empty cart message
+* Responsive layout
+* Simple animations on hover
+
+---
+
+## ✅ Expected Output
+
+* Fully functional cake shop UI
+* Data loaded from fake API
+* Cart stored in localStorage
+* Clean, readable JS code
+

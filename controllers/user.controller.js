@@ -3,6 +3,7 @@ const users= require('../data/users');
 exports.getallusers=(req,res)=>{
   res.json(users)
 };
+
 exports.getuserid = (req,res)=>{
   const user = users.find(u => u.id ===  +req.params.id);
   if(!user){
@@ -12,10 +13,12 @@ exports.getuserid = (req,res)=>{
 }
 
 exports.createuser =(req,res)=>{
+    console.log(req.body)
   const newuser={
     id: users.length+1,
     name:req.body.name
   }
+
   users.push(newuser);
   res.status(201).json(newuser);
 }
