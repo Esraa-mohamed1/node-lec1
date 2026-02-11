@@ -1,0 +1,5 @@
+http vs https 
+dns: domain name server 
+url:
+uri : url 
+uniform resource indetify 

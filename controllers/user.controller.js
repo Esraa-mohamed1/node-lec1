@@ -16,7 +16,8 @@ exports.createuser =(req,res)=>{
     console.log(req.body)
   const newuser={
     id: users.length+1,
-    name:req.body.name
+    name:req.body.name,
+    :req.file ? req.file.path : null
   }
 
   users.push(newuser);

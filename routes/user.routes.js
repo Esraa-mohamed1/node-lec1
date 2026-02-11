@@ -13,6 +13,6 @@ router.post('/upload', upload.single('file'),(req,res)=>{
 })
 router.get('/users', getallusers);
 router.get('/users/:id',getuserid);
-router.post('/',createuser) 
+router.post('/create',upload.single('avatar'),createuser); 
 
 module.exports = router;
